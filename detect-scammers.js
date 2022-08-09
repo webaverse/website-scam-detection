@@ -5,8 +5,8 @@ import { tlds as tldsToChange } from './tlds.js';
 // filter out all entries with more than 5 letters in the domain name
 const tlds = tldsToChange.filter(tld => tld.length < 6);
 
-// read the contexts of input.txt into an array
-const urls = fs.readFileSync('input.txt', 'utf8').split('\n');
+// check if input.txt exists, if it does load it into an array, otherwise load input_default.txt into an array
+const urls = fs.existsSync('input.txt') ? fs.readFileSync('input.txt', 'utf8').split('\n') : fs.readFileSync('input_default.txt', 'utf8').split('\n');
 
 const allUrls = [];
 
