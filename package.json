@@ -1,0 +1,14 @@
+{
+  "name": "detect-scammers",
+  "version": "1.0.0",
+  "description": "Given a domain, detect similar domains that might be trying to impersonate or scam your project",
+  "main": "detect-scammers.js",
+  "type": "module",
+  "scripts": {
+    "detect-scammers": "node detect-scammers.js",
+    "check-scammers": "node check-scammers.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
