@@ -14,6 +14,10 @@ First, make a file called `input.txt` or just edit `input_default.txt`.
 
 Make a list of all possible variants of the domain name you could possibly think someone would fall for.
 
+Then, make a file called `whitelist.txt` or just edit `whitelist_default.txt`.
+
+Add all of your legit domains or domains you know are real and safe and you wish to ignore.
+
 Now run `npm run detect-scammers`. This will take a while, as it will search through all known TLDs for scammers.
 
 When that is done, it should output a but a URLs to urls_to_check.txt, along with a folder of screenshots.
